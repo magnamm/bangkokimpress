@@ -1,68 +1,23 @@
-<!DOCTYPE HTML>
-<!--
-	   Massively by HTML5 UP
-	   html5up.net | @ajlkn
-	   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-   -->
+<!DOCTYPE html>
 <html>
+{% include head.html %}
+<body class="is-loading">
+<div id="wrapper" class="fade-in">
+	
+	{% include header.html %}
+	{% include menu.html %}
+		<section>
+		{% if page.image %}
+            <!-- <div class="image main"> -->
+            	<center><img src="{{ page.image | relative_url }}" width="45%" alt="" /></center>
+        	<!-- </div> -->
+        {% endif %}
+        </section>
+		{{ content }}
+		
+		{% include subLogo.html %}
 
-    {% include head.html %}
-    <head>
-    <script>
-		function resizeIframe(obj) {
-			obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-		}
-	</script>
-	</head>
-
-	  <body class="is-loading">
-
-		    <!-- Wrapper -->
-			  <div id="wrapper">
-
-            {% include header.html %}
-            {% include menu.html %}
-
-            <!-- Post -->
-				    <section class="post">
-						    <header class="major">
-								    <!-- <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span> -->
-								    {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-								    {% if page.description %}<p>{{ page.description }}</p>{% endif %}
-						    </header>
-
-                {% if page.image %}
-                <div class="image main"><img src="{{ page.image }}" alt="" /></div>
-                {% endif %}
-
-            {{ content }}
-
-				</section>
-				<section>
-				    <div class="row">
-		    		{% for page in site.pages %}
-			    		{% if page.layout == "Subpage" %}
-			    		<article class="3u 12u$(small)">
-			    		<table>
-			    			<tr>
-			    				<a href="{{ page.url  | relative_url }}" class="image fit"><img src="{{ page.image }}" width="100px" alt="" /></a>
-		    				</tr>
-		    				<tr>
-			    				<h4><center><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></center></h4>
-		    				</tr>
-
-		    				<!-- <tr><p>{{ page.description }}</p></tr> -->
-		    				</tr>
-	    				</table>
-			    			<!-- <li{% if current_page == page.url %} class="active"{% endif %}><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li> -->
-			    			</article>
-			    		{% endif %}
-	    			{% endfor %}
-	    			</div>
-	    			</section>
-
-        {% include footer.html %}
-
-    </body>
-
+	{% include footer.html %}
+</div>
+</body>
 </html>

@@ -28,32 +28,18 @@ zip_code: 11120
 country: Thailand
 phone: +669 4449 6463
 
-# 500px_url:
-facebook_url:
-github_url: 
-gitlab_url: 
-googleplus_url:
-instagram_url:
-linkedin_url: 
-pinterest_url:
-slack_url:
-twitter_url: 
-
-# Build settings
-markdown: kramdown
-
-sass:
-  style: compressed
-plugins:
-  - jekyll-feed
-
-paginate: 5
-paginate_path: "/blog/page:num/"
+twitter_username: jekyllrb
+github_username:  jekyll
 
 collections:
-  sub:
+  work:
     output: true
-    permalink: /:collection/:name
+    permalink: work/:path/
+# Build settings
+markdown: kramdown
+# theme: minima
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
