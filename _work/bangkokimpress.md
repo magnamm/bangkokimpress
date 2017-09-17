@@ -24,25 +24,21 @@ description: หน่วยงานหนึ่งที่สำคัญต�
 			{{ work.description }}<br>
 			</div>
 		</div>
-
 		<div class="modal fade " id="{{ work.youtube }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="exampleModalLabel"> {{ work.name }} </h5>
-						
 						<button type="button" class="button icon solo fa-times" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
-
 					<div class="modal-body">
 						<!-- <img src="https://img.youtube.com/vi/{{ work.youtube }}/0.jpg" width="20%"> -->
 							<h4>
 								{{ work.name}}
 							</h4>
 							<p>{{ work.description }}</p>
-
 					<ul class="media-list"> 
 					    {% for chap in work.chaptor %}
 					    <li class="media"> 
@@ -57,9 +53,7 @@ description: หน่วยงานหนึ่งที่สำคัญต�
 					    </li>     
 						{% endfor %}
 					</ul>
-
 					</div>
-
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 						<!-- <button type="button" class="btn btn-primary">Send message</button> -->
