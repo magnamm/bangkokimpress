@@ -8,14 +8,36 @@
 		<div class="col-md-3 d-flex align-items-stretch">
 			<div class="card">
 				{% if node.layout == "subpage" %}
-					<a href="{{ node.url  | absolute_url }}" ><img class="card-img-top" src="{{ node.image | relative_url }}" alt="Card image cap" style="background-color: white"></a>
+					<a href="{{ node.url  | absolute_url }}" ><img class="card-img-top" src="{{ node.image | relative_url }}" alt="" style="background-color: white"></a>
 					<div class="card-body">
-						<!-- <h4 class="card-title">Card title</h4> -->
+						<h4 class="card-title">Card title</h4>
 						<p class="card-text">{{ node.description }}</p>
 					</div>
-				{% endif %}
 			</div>
 		</div>
+		{% endif %}
 		{% endfor %}
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+	<h3>Bangkok Impress Family</h3>
+	</div>
+
+	<div class="row">
+	{% for page in site.pages %}
+	{% if page.layout == "subpage" %}
+	<div class="col-md-3 d-flex align-items-stretch">
+		<div class="card">
+			<a href="{{ page.url  | relative_url }}"><img src="{{ page.image | relative_url }}" class="card-img-top" alt="" /></a>
+			<div class="card-body">
+				<p class="card-text"><a href="{{ page.url | absolute_url }}">{{ page.description }}</a></p>
+			</div>
+		
+		</div>
+	</div>
+	{% endif %}
+	{% endfor %}
 	</div>
 </div>
