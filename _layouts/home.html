@@ -2,14 +2,15 @@
 <html>
 {% include head.html %}
 <body class="is-loading">
-<div id="wrapper" class="fade-in">
+<div id="wrapper">
 	{% include intro.html %}
-	{% include header.html %}
+	
 	{% include menu.html %}
-		<section>
+	<header id="header"></header>
+		<div class="container" style="background-color: white; padding: 20px; margin-top: -1em">
 		{{ content }}
 		{% include subLogo.html %}
-		</section>
+		</div>
 
 	{% include footer.html %}
 </div>

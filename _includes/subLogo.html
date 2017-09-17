@@ -1,23 +1,21 @@
-<section>
+<div class="container">
 	<div class="row">
-	<h3 align="center">Bangkok Impress Family</h3>
+	<h3>Bangkok Impress Family</h3>
 	</div>
-</section>
-
-<section>
-
-	<div class="row marketing">
-		
-		{% assign work = site.work | sort:"num" %}
+	<div class="row">
+    	{% assign work = site.work | sort:"num" %}
 		{% for node in work %}
-			{% if node.layout == "subpage" %}
-		  		<div class="col-lg-3">
-				    <a href="{{ node.url  | absolute_url }}" class="image fit"><img src="{{ node.image | relative_url }}" width="100px" alt="" /></a>
-				    <!-- <b><center><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></center></b> -->
-				    <p>{{ node.description }}</p>
-				</div>
-			{% endif %}
+		<div class="col-md-3 d-flex align-items-stretch">
+			<div class="card">
+				{% if node.layout == "subpage" %}
+					<a href="{{ node.url  | absolute_url }}" ><img class="card-img-top" src="{{ node.image | relative_url }}" alt="Card image cap" style="background-color: white"></a>
+					<div class="card-body">
+						<!-- <h4 class="card-title">Card title</h4> -->
+						<p class="card-text">{{ node.description }}</p>
+					</div>
+				{% endif %}
+			</div>
+		</div>
 		{% endfor %}
-
 	</div>
-</section>
+</div>

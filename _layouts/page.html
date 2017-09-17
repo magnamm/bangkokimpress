@@ -2,24 +2,26 @@
 <html>
 {% include head.html %}
 <body class="is-loading">
-<div id="wrapper" class="fade-in">
-	{% include header.html %}
-	{% include menu.html %}
-		<section>
-		{% if page.image %}
+<div id="wrapper">
+    
+    {% include header.html %}
+    {% include menu.html %}
+        <div class="container" style="background-color: white; padding: 20px; margin-top: -1em">
+            {% if page.image %}
             <!-- <div class="image main"> -->
-            	<center><img src="{{ page.image | relative_url }}" width="45%" alt="" /></center>
-        	<!-- </div> -->
-        {% endif %}
-		{% if page.description %}
-            <!-- <div class="image main"> -->
-            	<center>{{ page.description }}</center>
-        	<!-- </div> -->
-        {% endif %}
-        </section>
-		{{ content }}
+                <center><img src="{{ page.image | relative_url }}" width="45%" alt="" /></center>
+            <!-- </div> -->
+            {% endif %}
+            {% if page.description %}
+                <!-- <div class="image main"> -->
+                    <center>{{ page.description }}</center>
+                <!-- </div> -->
+            {% endif %}
+        {{ content }}
+        
+        </div>
 
-	{% include footer.html %}
+    {% include footer.html %}
 </div>
 </body>
 </html>
