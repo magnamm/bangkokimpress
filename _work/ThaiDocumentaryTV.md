@@ -39,9 +39,9 @@ description: มุ่งเน้นการส่งเสริมการ�
 							</h4>
 							<p>{{ work.description }}</p>
 					<ul class="media-list"> 
-					    {% for chap in work.chaptor %}
-					    <li class="media"> 
-					        <a class="pull-left" href="https://www.youtube.com/watch?v={{ chap.youtube }}" target="_blank"> 
+						{% for chap in work.chaptor %}
+						<li class="media"> 
+							<a class="pull-left" href="https://www.youtube.com/watch?v={{ chap.youtube }}" target="_blank"> 
 					            <img class="media-object" src="https://img.youtube.com/vi/{{ chap.youtube }}/0.jpg" width="100"> 
 					        </a>         
 					        <div class="media-body" style="padding: 0 5px 0 5px"> 

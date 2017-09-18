@@ -13,7 +13,6 @@ description: “OUR PRIDE”  Let us  be a part of your success
 				<label for="name">Name</label>
 				<input type="text" name="name" id="name" />
 			</div>
-
 		<div class="field">
 			<label for="email">Email</label>
 			<input type="text" name="_replyto" id="email" />
@@ -45,14 +44,3 @@ description: “OUR PRIDE”  Let us  be a part of your success
 	<h3>Email</h3>
 	<p><a href="#">{{ site.email }}</a></p>
 </section>
-
-<section>
-	<h3>Social</h3>
-	<ul class="icons alt">
-		
-	</ul>
-</section>
-
-
-
-
