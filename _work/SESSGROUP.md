@@ -1,9 +1,7 @@
 ---
 layout: subpage
-num: 4
 title: SESS GROUP
 image: assets/images/sess2.png
-description: 'ออกแบบการจัดงานอย่างสร้างสรรค์โดยมืออาชีพผู้มีประสบการณ์ เติมความสุขทุกประเภท'
 ---
 
 
