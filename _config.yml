@@ -17,7 +17,7 @@ title: Bangkok Impress | OUR PRIDE Let us be a part of your success
 subtitle: OUR PRIDE Let us be a part of your success
 email: anna.bangkokimpress@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-baseurl: "/bangkokimpress" # the subpath of your site, e.g. /blog
+# baseurl: "/bangkokimpress" # the subpath of your site, e.g. /blog
 # url: "https://magnamm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 author:
