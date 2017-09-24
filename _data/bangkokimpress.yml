@@ -1,6 +1,7 @@
 - name: We Love ASEAN
   description: ประเภท รายการโทรทัศน์ 
   youtube: MaE46d4TxHc
+  logo: "Logo_WeLoveAsean.jpg"
   link: https://www.youtube.com/playlist?list=PLpzjKdflLnN4tcD0QGoKttKalfJeNr3Gs
   chaptor:
     - title: รายการ We Love ASEAN ตอนที่ 1 รายาเซียมในปีนัง
@@ -104,6 +105,7 @@
 - name: สุข ณ สถาน
   description: ประเภท รายการโทรทัศน์ 
   youtube: owVu44td03E
+  logo: "Logo_SukNStan.jpg"
   link: https://www.youtube.com/playlist?list=PLr8CA-SlIPTSEDv4YE40h-5sSO8-8UO-U
   chaptor:
     - title: สุข ณ สถาน - สถานปฏิบัติธรรมวัดดอยหลังถ้ำ อ.บ้านโฮ่ง จ.ลำพูน
@@ -178,6 +180,7 @@
 - name: อริยทัศน์ อินเดีย
   description: ประเภท รายการโทรทัศน์ 
   youtube: 3AagI-81YOg
+  logo: "Logo_DTIN.png"
   link: 
   chaptor:
     - title: อริยทัศน์ อินเดีย - เปิดประตูพระราชวังกบิลพัสดุ์ (1)" 
@@ -309,6 +312,7 @@
 - name: pride of cambodia
   description: ประเภท รายการโทรทัศน์ 
   youtube: p0wpW02aL4I
+  logo: "Logo_POC.png"
   link: 
   chaptor:
     - title: pride of cambodia
@@ -320,6 +324,7 @@
 - name: PPC PR
   description: ประเภท วิดีทัศน์
   youtube: FWv7lsv2Jgo
+  logo: "Logo_PPC.jpg"
   link: 
   chaptor:
     - title: PPC PR

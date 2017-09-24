@@ -11,7 +11,11 @@ description: หน่วยงานหนึ่งที่สำคัญต�
 		<div class="col-md-4">
 			<div class="thumbnail">
 			<a href="#" data-toggle="modal" data-target="#{{ work.youtube }}">
-				<img src="https://img.youtube.com/vi/{{ work.youtube }}/0.jpg" width="100%">
+				{% if work.logo %}
+					<img src="../../assets/images/{{ work.logo }}" width="100%">
+					{% else %}
+					<img src="https://img.youtube.com/vi/{{ work.youtube }}/0.jpg" width="100%">
+				{% endif %}
 			</a>
 				<div class="caption">
 				<a href="#" data-toggle="modal" data-target="#{{ work.youtube }}">
@@ -42,7 +46,11 @@ description: หน่วยงานหนึ่งที่สำคัญต�
 					    {% for chap in work.chaptor %}
 					    <li class="media"> 
 					        <a class="pull-left" href="https://www.youtube.com/watch?v={{ chap.youtube }}" target="_blank"> 
-					            <img class="media-object" src="https://img.youtube.com/vi/{{ chap.youtube }}/0.jpg" width="100"> 
+					        	{% if work.logo %}
+									<img class="media-object" src="../../assets/images/{{ work.logo }}" width="100" >
+									{% else %}
+					            	<img class="media-object" src="https://img.youtube.com/vi/{{ chap.youtube }}/0.jpg" width="100"> 
+				            	{% endif %}
 					        </a>         
 					        <div class="media-body" style="padding: 0 5px 0 5px"> 
 					        	<a class="pull-left" href="https://www.youtube.com/watch?v={{ chap.youtube }}" target="_blank"> 
