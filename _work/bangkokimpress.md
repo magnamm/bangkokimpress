@@ -9,6 +9,7 @@ description: หน่วยงานหนึ่งที่สำคัญต�
 	<div class="row">
 	{% for work in site.data.bangkokimpress %}
 		<div class="col-md-3">
+			{{ work.description }}<br>
 			<div class="thumbnail">
 			<a href="#" data-toggle="modal" data-target="#{{ work.youtube }}">
 				{% if work.logo %}
@@ -24,7 +25,6 @@ description: หน่วยงานหนึ่งที่สำคัญต�
 					</h4>
 				</a>
 				</div>
-			{{ work.description }}<br>
 			</div>
 		</div>
 		<div class="modal fade " id="{{ work.youtube }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
