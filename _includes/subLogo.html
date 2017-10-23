@@ -5,7 +5,7 @@
 	<div class="row">
     	{% assign work = site.work | sort:"num" %}
 		{% for node in work %}
-		<div class="col-lg-3 col-sm-6 d-flex align-items-stretch">
+		<div class="col-lg-4 col-sm-6 d-flex align-items-stretch">
 			<div class="card">
 				{% if node.layout == "subpage" %}
 					<a href="{{ node.url  | absolute_url }}" ><img class="card-img-top" src="{{ node.image | relative_url }}" alt="" style="background-color: white"></a>
