@@ -1,5 +1,5 @@
 ---
-layout: subpage
+layout: subpageX
 num: 4
 title: SESS GROUP
 image: assets/images/sess2.png
