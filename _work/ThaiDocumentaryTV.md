@@ -8,7 +8,7 @@ description: มุ่งเน้นการส่งเสริมการ�
 <section>
 	<div class="row">
 	{% for work in site.data.ThaiDocumentaryTV %}
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<div class="thumbnail">
 			<a href="#" data-toggle="modal" data-target="#{{ work.youtube }}">
 				{% if work.logo %}
